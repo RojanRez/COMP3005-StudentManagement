@@ -28,6 +28,19 @@ The `student_app` user needs permission to connect to `student_db`, access the `
 
 The `setup.sql` file should only be run once on a new database.
 
+To give `student_app` access to the database, run these commands in PostgreSQL as an administrator:
+
+```sql
+GRANT CONNECT ON DATABASE student_db TO student_app;
+GRANT USAGE ON SCHEMA public TO student_app;
+GRANT SELECT, INSERT, UPDATE, DELETE
+ON TABLE public.students TO student_app;
+GRANT USAGE, SELECT
+ON SEQUENCE public.students_student_id_seq TO student_app;
+```
+
+The `student_app` account should be created with its own password before running these commands.
+
 ## Running the Application
 
 Java 21 and the PostgreSQL JDBC driver are needed to run the program.
