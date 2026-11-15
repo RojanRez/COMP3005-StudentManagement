@@ -96,8 +96,8 @@ public class StudentApp {
     // Display menu and run the selected operation
     public static void main(String[] args) {
 
-    // Read the database password from an environment variable
-    // instead of storing it directly in the code
+        // Read the database password from an environment variable
+        // instead of storing it directly in the code
         String password = System.getenv("DB_PASSWORD");
 
         if (password == null || password.isEmpty()) {
