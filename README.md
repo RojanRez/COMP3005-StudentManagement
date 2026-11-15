@@ -89,4 +89,4 @@ When the program starts, it displays a menu with these options. After each opera
 
 ## Demonstration Video
 
-(https://drive.google.com/file/d/14HH2k53lnuThLpeHtiN1eP24yBg84XHe/view?usp=sharing)
+https://drive.google.com/file/d/14HH2k53lnuThLpeHtiN1eP24yBg84XHe/view?usp=sharing
